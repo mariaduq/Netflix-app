@@ -78,7 +78,7 @@ public class MovieActivity extends AppCompatActivity implements MovieDetailTask.
             int id = extras.getInt("id");
             if (id > 3 || id < 1){
                 id = 3;
-                Toast.makeText(this, "Devido a falta de dados no servidor o filme com o id 03 está sendo exibido", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Due to lack of data on the server, the movie with id 03 is being shown", Toast.LENGTH_LONG).show();
             }
 
             MovieDetailTask movieDetailTask = new MovieDetailTask(this);
